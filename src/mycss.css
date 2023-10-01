@@ -1,0 +1,55 @@
+/*
+My style
+*/
+
+
+.rh-footer {
+    position: fixed;
+    bottom: 40px;
+    right: 120px;
+    height: 50px;
+}
+
+h2.rh-title {
+    color: #ffffff;
+}
+
+p.rh-presenter {
+    color: #ffffff;
+    text-align: "left";
+}
+
+.narrow td
+{
+font-size: 26pt;
+}
+
+.reveal small {
+    text-align: left;
+}
+
+.icon_text_container {
+    display: grid;
+    grid-template-columns: 80px 80px;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.special-header {
+    position: absolute;
+    padding: 10px 20px 10px 20px;
+    top:30px;
+    left: 0px;
+    z-index:500;
+    /*background-color: rgba(0,0,0,0.5)*/
+}
+
+/* .reveal p {
+    text-align: left;
+}
+.reveal ul {
+    display: block;
+}
+.reveal ol {
+    display: block;
+}   */

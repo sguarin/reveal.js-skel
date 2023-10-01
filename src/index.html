@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="reveal/reset.css"/>
+		<link rel="stylesheet" href="reveal/reveal.css"/>
+		<link rel="stylesheet" href="reveal/theme/rh-white.css" id="theme"/>
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme"/>
+
+        <!-- CopyCode CSS -->
+        <link rel="stylesheet" href="plugin/copycode/copycode.css"/>
+
+		<!-- My overrides -->
+		<link rel="stylesheet" href="mycss.css" id="mycss"/>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="rh-footer">
+				<img alt="background" src="img/redhat.png" class="ribbon"/>
+			</div>
+			<div class="slides">
+				<section data-background="img/background.png">
+					<h2 class="rh-title">Seguridad en sitemas embebidos basados en ESP*</h2>
+					<!-- <img alt="HV" width="500" src="img/hv-transp.png"> -->
+					<p class="rh-presenter" style="margin:40px;text-align:left">Sebastián Guarino</p>
+				</section>
+				<section data-markdown="intro.md" data-separator-notes="^Notes:" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+				
+			</div>
+		</div>
+
+		<script src="reveal/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+        <script src="plugin/copycode/copycode.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				//margin: 50,
+				//minScale: 0.2,
+				//maxScale: 2.0,
+
+				hash: true,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				showSlideNumber: 'all',
+
+				margin: 0,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [
+					RevealMarkdown,
+					RevealHighlight,
+					RevealNotes,
+					RevealZoom,
+					CopyCode
+				]
+			});
+		</script>
+	</body>
+</html>

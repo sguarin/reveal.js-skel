@@ -1,0 +1,27 @@
+{
+  "name": "myreveal.js",
+  "version": "1.0.0",
+  "description": "My template for reveal.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "gulp clean",
+    "build": "gulp",
+    "watch": "gulp watch",
+    "serve": "gulp serve"
+  },
+  "author": "Sebastian Guarino",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "reveal.js": "^4.6.1",
+    "reveal.js-copycode": "^1.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-html": "^6.0.0",
+    "merge-stream": "^2.0.0"
+  }
+}
