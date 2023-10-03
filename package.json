@@ -1,14 +1,14 @@
 {
   "name": "myreveal.js",
   "version": "1.0.0",
-  "description": "My template for reveal.js",
+  "description": "A gulp based template for reveal.js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "gulp clean",
     "build": "gulp",
     "watch": "gulp watch",
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "clean": "gulp clean"
   },
   "author": "Sebastian Guarino",
   "license": "UNLICENSED",
