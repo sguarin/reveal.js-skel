@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a skeleton used for building reveal.js presentations.
+This is a skeleton used for building [reveal.js](https://revealjs.com/) presentations.
 You could edit the src/index.html file with your contents.
 
 ## Installation
@@ -26,4 +26,12 @@ Once you save files, files in dist will be updated, and the browser will reload.
 
 ```bash
 npm run-script serve
+```
+
+The presentation will be available in [locally](http://localhost:8000/).
+
+### Clean things
+
+```bash
+npm run-script clean
 ```
