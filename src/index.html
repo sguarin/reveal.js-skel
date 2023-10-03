@@ -30,18 +30,19 @@
 					<!-- <img alt="HV" width="500" src="img/hv-transp.png"> -->
 					<p class="rh-presenter" style="margin:40px;text-align:left">Sebastián Guarino</p>
 				</section>
-				<section data-markdown="intro.md" data-separator-notes="^Notes:" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+				<section data-state="lang_es" data-markdown="intro.md" data-separator-notes="^Notes:" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
 				
 			</div>
 		</div>
 
 		<script src="reveal/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
 		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
         <script src="plugin/copycode/copycode.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
+
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -70,8 +71,18 @@
 					RevealNotes,
 					RevealZoom,
 					CopyCode
-				]
+				],
+				// More info at https://github.com/Martinomagnifico/reveal.js-copycode#global-options
+				copycode: {
+					button: "hover"
+				}
 			});
+			Reveal.on('ready', event => {
+  				// event.currentSlide, event.indexh, event.indexv
+				document.querySelector('.lang_es').remove();
+			} );
+			
+			//Reveal.sync();
 		</script>
 	</body>
 </html>
